@@ -2,9 +2,14 @@
 
 int main() {
     //carta numero 1
-    char estado1[50], cidade1[50], codigo1[3];
+    char estado1[50], cidade1[50], codigo1[10];
     int populacao1, turismo1;
     float area1, pib1;
+
+    //carta numero 2
+    char estado2[50], cidade2[50], codigo2[10];
+    int populacao2, turismo2;
+    float area2, pib2;
     
     //dados carta numero 1
     printf("CARTA NUMERO 1 \n\nEscreva qual o nome do seu estado: \n");
@@ -27,11 +32,6 @@ int main() {
 
     printf("Qual o valor do PIB da sua cidade? \n");
     scanf("%f", &pib1);
-
-    //carta numero 2
-    char estado2[50], cidade2[50], codigo2[3];
-    int populacao2, turismo2;
-    float area2, pib2;
     
     //dados carta numero 2
     printf("CARTA NUMERO 2 \n\nEscreva qual o nome do seu estado: \n");
@@ -58,22 +58,22 @@ int main() {
     //imprimir dados da carta 1
     printf("[CARTA NUMERO 1]\n\n");
     printf("Estado: %s \n", estado1);
-    printf("Cidade: %s \n", cidade1);
+    printf("Nome da cidade: %s \n", cidade1);
     printf("Codigo: %s \n", codigo1);
-    printf("População: %d \n", populacao1);
-    printf("Pontos turisticos: %d \n", turismo1);
-    printf("Area em km²: %.3f \n", area1);
-    printf("PIB: %.3f \n\n", pib1);
+    printf("População: %d habitantes \n", populacao1);
+    printf("Numero de pontos turisticos: %d \n", turismo1);
+    printf("Area: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n\n", pib1);
 
     //imprimir dados da carta 2
     printf("[CARTA NUMERO 2]\n\n");
     printf("Estado: %s \n", estado2);
-    printf("Cidade: %s \n", cidade2);
+    printf("Nome da cidade: %s \n", cidade2);
     printf("Codigo: %s \n", codigo2);
-    printf("População: %d \n", populacao2);
-    printf("Pontos turisticos: %d \n", turismo2);
-    printf("Area em km²: %.3f \n", area2);
-    printf("PIB: %.3f \n", pib2);
+    printf("População: %d habitantes\n", populacao2);
+    printf("Numero de pontos turisticos: %d \n", turismo2);
+    printf("Area: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais", pib2);
     
     return 0;
 }
